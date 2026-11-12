@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport"
+		content="width=device-width,
+		initial-scale=1" />
+		<title>Campus Notices</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<h1>Campus Notices</h1>
+		<form action="/api/notices" method="post">
+		<label for="title">Title</label>
+		<input id="title" name="title"
+			type="text" required/>
+
+		<label for="msg">Message</label>
+		<textarea id="msg" name="message"></textarea>
+		
+		<button type="submit">Post notice</button>
+		</form>
+	</body>
+</html>
+		

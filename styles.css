@@ -1,0 +1,105 @@
+* {
+	font-family: Verdana, Arial, Tahoma;
+}
+
+:root {
+	--brand: #ffff00;
+	--space: 1rem;
+}
+
+body {
+	background-color: #003300;
+	border: 2px solid rgb(251, 255, 0);
+	padding: 30px;
+	margin: 50px;
+}
+
+label {
+	color: #003300;
+}
+
+#msg, #title {
+	background: #ffffcc;
+	border-radius: 8px;
+	padding: 7px;
+}
+
+p, h3 {
+	color: blue;
+}
+
+.card {
+	padding: 1rem;
+}
+
+nav a {
+	display: block;
+	color: #003300;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.btn {
+	background: var(--brand);
+	padding: var(--space);
+}
+
+.campus-pic {
+	float: right;
+	max-width: 100%;
+	height: auto;
+}
+
+#bg1 {
+	background-color: #e6eb00;
+	text-align: center;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		"head head head"
+		"menu content note"
+		"foot foot foot";
+	grid-template-columns: 1fr 3fr 2fr;
+	gap: 3px;
+	background-color: rgb(237, 240, 234);
+	padding: 5px;
+}
+
+.container div {
+	background-color: rgb(250, 243, 141);
+	padding: 10px;
+}
+
+.container div.head {
+	grid-area: head;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.container div.head h1 {
+	flex: 1;
+	text-align: center;
+	margin: 0;
+}
+
+.container div.menu {
+	grid-area: menu;
+}
+
+.container div.content {
+	grid-area: content;
+}
+
+.container div.note {
+	grid-area: note;
+}
+
+.container div.foot {
+	grid-area: foot;
+	text-align: center;
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Campus Notices</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+	<main>
+
+	<div class="container" id="bg1">
+
+		<div class="head">
+			<img src="D:\Ofiaza\dmmmsu-logo-no-bg.png" alt="logo" height="150" width="150">
+			<h1>Header</h1>
+		</div>
+
+		<div class="menu">
+			<nav>
+				<p>Links</p>
+				<p>Home</p>
+				<p>About</p>
+				<p>Contact</p>
+			</nav>
+		</div>
+
+		<div class="content">
+			<h1>Campus Notice</h1>
+			<img class="campus-pic" src="D:\Ofiaza\photo_2026-11-11_23-28-10.jpg" alt="campusPic" width="400" height="200">
+			<h4>Faculty Members</h4>
+			<ul>
+				<li>Haydee Limson</li>
+				<li>Agustin Veras</li>
+				<li>Emely Munar</li>
+				<li>Jheck Baculo</li>
+			</ul>
+		</div>
+
+		<div class="note">
+			<form class="pnotice" action="/api/notices" method="post">
+				<label for="title">Title</label>
+				<input id="title" name="title" type="text" required />
+
+				<label for="msg">Message</label>
+				<textarea id="msg" name="message"></textarea>
+
+				<button class="btn" type="submit">Post Notice</button>
+			</form>
+		</div>
+
+		<div class="foot">
+			<h4>Don Mariano Marcos Memorial State University</h4>
+		</div>
+
+	</div>
+	</main>
+	</body>
+</html>
